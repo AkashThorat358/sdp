@@ -20,10 +20,10 @@ class SleepDisorder():
         self.Occupation = 'Occupation_' + Occupation
 
     def load_model(self):
-        with open('project_app\Logistic_model.pkl','rb') as f:
+        with open('project_app/Logistic_model.pkl','rb') as f:
             self.model = pickle.load(f)
 
-        with open('project_app\project_data.json','rb') as f:
+        with open('project_app/project_data.json','rb') as f:
             self.project_data = json.load(f)
 
     def get_predicted_disorder(self):
